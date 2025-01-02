@@ -1,0 +1,685 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+    /* position: fixed; */
+    
+}
+
+.main {
+    width: 100%;
+    min-height: 500vh;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+.side-bar {
+    width: 25%;
+    height: 90vh;
+    /* background-color: red; */
+    float: left;
+    position: fixed;        
+    margin-right: 1150px;
+}
+
+.side-bar #menu-bar {
+    height: 110px;
+    width: 95%;
+    /* background-color: yellowgreen; */
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #121212;
+}
+
+.side-bar #menu-bar #home-icon {
+    height: 50px;
+    width: 100%;
+    /* background-color: pink; */
+    border-radius: 5px;
+    display: flex;
+    color: #b0aeae;
+}
+.side-bar #menu-bar #home-icon a {
+    text-decoration: none;
+    color: #b0aeae;
+}
+.side-bar #menu-bar #home-icon a:hover {
+    color: #fff;
+}
+.side-bar #menu-bar #home-icon #home-icon1 {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 22px;
+    /* font-weight: 800; */
+}
+.side-bar #menu-bar #home-icon h4 {
+    padding-top: 22px;
+    padding-left: 25px;
+    /* font-weight: 800; */
+}
+
+.side-bar #menu-bar #search-icon {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    
+    
+}
+.side-bar #menu-bar #search-icon a {
+    text-decoration: none;
+    color: #b0aeae;
+}
+
+.side-bar #menu-bar #search-icon #search-icon1 {
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 22px;
+    color: #b0aeae;
+    /* font-weight: 800; */
+    
+}
+.side-bar #menu-bar #search-icon #search-icon1:hover {
+    color: #fff;
+
+}
+.side-bar #menu-bar #search-icon h4:hover {
+    color: #fff;
+}
+
+.side-bar #menu-bar #search-icon h4 {
+    padding-top: 15px;
+    padding-left: 25px;
+    color: #b0aeae;
+    /* font-weight: 800; */
+    
+}
+.side-bar #your-library {
+    min-height: 550px;
+    width: 95%;
+    background-color: #121212;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    overflow: auto;
+    
+    /* position: absolute; */
+
+    
+    
+}
+.side-bar #your-library #lib-icon {
+    height: 70px;
+    width: 95%;
+
+    display: flex;
+    color:#b0aeae;
+}
+.side-bar #your-library #lib-icon svg {
+    height: 25px;
+    padding-top: 15px;
+    padding-left: 20px;
+    fill: currentColor;
+    
+    
+    
+}
+.side-bar #your-library #lib-icon svg:hover {
+    fill: #fff;
+}
+.side-bar #your-library #lib-icon h4{
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.side-bar #your-library #lib-icon h4:hover {
+    color: #fff;
+}
+.side-bar #your-library #lib-icon #add {
+    padding-top: 22px;
+    padding-left: 130px;
+    font-size: 20px;
+}
+.side-bar #your-library #lib-icon #add:hover {
+    color: #fff;
+    font-size: 21px;
+}
+
+.side-bar #your-library #lib-icon #arrow {
+    padding-top: 22px;
+    padding-left: 20px;
+    font-size: 20px;
+    
+} 
+.side-bar #your-library #lib-icon #arrow:hover {
+    color: #fff;
+    font-size: 21px;
+}
+
+.side-bar #your-library #playList {
+    height: 40px;
+    width: 80%;
+    /* background-color: red; */
+    margin-left: 20px;
+    display: flex;
+}
+.side-bar #your-library #playList #playLists {
+    height: 30px;
+    width: 80px;
+    background-color: #2A2A2A;
+    /* margin-left: 5px; */
+   
+    border-radius: 25px;
+    text-align: center;
+    justify-content: center;
+}
+.side-bar #your-library #playList #playLists:hover {
+    background-color: #363333;
+}
+.side-bar #your-library #playList #playLists p{
+    padding-top: 6px;
+    font-size: 15px;
+}
+
+.side-bar #your-library #playList #playLists a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.side-bar #your-library #playList #artists {
+    height: 28px;
+    width: 70px;
+    background-color: #2A2A2A;
+    margin-left: 5px;
+   
+    border-radius: 25px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.side-bar #your-library #playList #artists:hover {
+    background-color: #363333;
+}
+.side-bar #your-library #playList #artists a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.side-bar #your-library #playList #artists p{
+    padding-top: 6px;
+    font-size: 15px;
+}
+
+.side-bar #your-library #search-recent {
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+  
+}
+.side-bar #your-library #search-recent #bar {
+    margin-left: 2px;
+}
+.side-bar #your-library #search-recent #reSearch {
+    margin-left: 30px;
+    margin-top: 12px;
+    color: #b0aeae;
+}
+.side-bar #your-library #search-recent #reSearch:hover {
+    color: #fff;
+    font-size: 17px;
+}
+.side-bar #your-library #search-recent p{
+    margin-left: 220px;
+    margin-top: 12px;
+    color: #b0aeae;
+    font-size: 14px;
+}
+.side-bar #your-library #search-recent p:hover {
+    color: #fff;
+    font-size: 15px;
+}
+
+.side-bar #your-library #singers-list {
+    height: 60vh;
+    width: 100%;
+    /* overflow: auto; */
+    /* background-color: blue; */
+}
+.side-bar #your-library #singers-list #firstImg {
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+.side-bar #your-library #singers-list  #items {
+    height: 60px;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 5px;
+    display: flex;
+}
+.side-bar #your-library #singers-list  #items:hover {
+    background-color: #1A1A1A;
+    width: 100%;
+    border-top-left-radius: 10px;
+    /* margin-left: 20px; */
+    border-bottom-left-radius: 10px;
+
+    
+}
+
+.side-bar #your-library #singers-list  #items  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 18px;
+}
+
+.side-bar #your-library #singers-list .First-img {
+    margin-left: 8px;
+    display: flex;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.side-bar #your-library #singers-list .First-img p{
+    padding-left: 20px;
+    padding-top: 8px;
+    font-size: 15px;
+}
+.side-bar #your-library #singers-list .First-img p #pin-icon {
+    font-size: 13px;
+    color: #1ED760;
+}
+.side-bar #your-library #singers-list .First-img p span {
+    font-size: 12px;
+    padding-left: 5px;
+    color: #b0aeae;
+    font-weight: 600;
+}
+.side-bar #your-library #singers-list  p{
+    padding-left: 15px;
+    padding-top: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.side-bar #your-library #singers-list  p span{
+
+    font-size: 12px;
+    /* padding-left: 5px; */
+    color: #b0aeae;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contant-bar {
+    min-height: 100vh;
+    width: 75%;
+    margin-top: 10px;
+    background-color: #1A1A1C;
+    border-radius: 5px;
+    margin-right: 10px;
+    float: left;
+    position: absolute;
+    margin-left: 375px;
+}
+.contant-bar #header {
+    height: 60px;
+    width: 80%;
+    /* background-color: #fff; */
+    display: flex;
+    position: fixed;
+    /* background-color:#1A1A1C; */
+    border-radius: 8px;
+    
+
+}
+.contant-bar #header #left-icon {
+    font-size: 27px;
+    padding-top: 20px;
+    padding-left: 25px;
+    color: #fff;
+    
+}
+.contant-bar #header #right-icon {
+    font-size: 27px;
+    padding-top: 20px;
+    padding-left: 10px;
+    color: #fff;
+
+}
+.contant-bar #header #premium {
+    height: 33px;
+    width: 150px;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    border-radius: 18px;
+    margin-left: 680px;
+    margin-top: 18px;
+}
+.contant-bar #header #premium:hover {
+    height: 33px;
+    width: 152px;
+    background-color: rgb(6, 6, 6);
+    align-items: center;
+    text-align: center;
+    border-radius: 18px;
+    margin-left: 670px;
+    margin-top: 18px;
+}
+
+.contant-bar #header #premium h5{
+    padding-top: 8px;
+    font-size: 14px;
+
+}
+
+.contant-bar #header #premium h5:hover{
+    padding-top: 8px;
+    font-size: 14px;
+
+}
+.contant-bar #header #premium a {
+    text-decoration: none;
+    color: #000;
+}
+.contant-bar #header #premium a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.contant-bar #header #install {
+    height: 28px;
+    width: 110px;
+    background-color: #0C0C0E;
+    align-items: center;
+    text-align: center;
+    border-radius: 18px;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+}
+.contant-bar #header #install:hover {
+    height: 30px;
+    width: 112px;
+    background-color: #fff;
+    align-items: center;
+    text-align: center;
+    border-radius: 18px;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+}
+
+.contant-bar #header #install h5{
+    /* padding-top: 5px; */
+    font-size: 14px;
+    padding-left: 5px;
+
+}
+.contant-bar #header #install h5:hover {
+    font-size: 14px;
+    padding-left: 5px;
+    color: #000;
+}
+.contant-bar #header #install h5 a {
+    text-decoration: none;
+    color: #fff;
+}
+.contant-bar #header #install h5 a:hover {
+    text-decoration: none;
+    color: #000;
+}
+.contant-bar #header #install #install-icon {
+    padding-left: 10px;
+    color: #fff;
+}
+.contant-bar #header #install #install-icon:hover {
+    padding-left: 10px;
+    color: #000000;
+}
+
+.contant-bar #header #notification {
+    height: 30px;
+    width: 30px;
+    background-color: #0C0C0E;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.contant-bar #header #notification:hover {
+    height: 31px;
+    width: 31px;
+    background-color: #0C0C0E;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.contant-bar #header #notification a{
+    text-decoration: none;
+    color:#b0aeae;
+}
+.contant-bar #header #notification a:hover{
+    text-decoration: none;
+    color: #fff;;
+}
+.contant-bar #header #notification #notification-icon{
+    padding-top: 6px;
+    font-size: 18px;
+
+}
+
+.contant-bar #header #notification #notification-icon:hover{
+    padding-top: 6px;
+    font-size: 19px;
+
+}
+
+
+.contant-bar #header #account {
+    height: 30px;
+    width: 30px;
+    background-color: #0C0C0E;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+.contant-bar #header #account:hover {
+    height: 31px;
+    width: 31px;
+    background-color: #0C0C0E;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+.contant-bar #header #account a {
+    text-decoration: none;
+    color: #fff;
+}
+.contant-bar #header #account #account-icon{
+    padding-top: 6px;
+    font-size: 16px;
+
+}
+.contant-bar #header #account #account-icon:hover{
+    padding-top: 6px;
+    font-size: 18px;
+
+}
+
+.contant-bar h1{
+    padding-left: 20px;
+    padding-top: 18px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-top: 100px;
+
+}
+
+.contant-bar #recent-song {
+    height: 150px;
+    width: 100%;
+    /* background-color: #fff; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.contant-bar #recent-song #tab {
+    height: 60px;
+    width: 32%;
+    background: #373738;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    display: flex;
+}
+.contant-bar #recent-song #tab:hover {
+    background-color: #484747;
+}
+.contant-bar #recent-song #tab img {
+    height: 60px;
+    width: 60px;
+    border-top-left-radius: 5px;
+    /* margin-left: 20px; */
+    border-bottom-left-radius: 5px;
+    object-fit: cover;
+}
+.contant-bar #recent-song #tab h5 {
+    color: #fff;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.contant-bar #recent-song a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contant-bar h2 {
+    padding-top: 30px;
+    padding-left: 20px;
+    color: #fff;
+    font-weight: 700;
+    
+}
+.contant-bar h2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contant-bar h2 span {
+    font-size: 13px;
+    float: right;
+    padding-right: 30px;
+    color: #b0aeae;
+}
+.contant-bar #recent-song #tab #button {
+    height: 30px;
+    width: 30px;
+    background-color: #1ED760;
+    font-size: 18px;
+    text-align: center;
+    /* padding-top: 5px; */
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 110px;
+}
+.contant-bar #recent-song #tab #button #button1 {
+    padding-top: 6px;
+    padding-left: 2px;
+}
+.contant-bar #recent-song #tab #button-two {
+    height: 30px;
+    width: 30px;
+    background-color: #1ED760;
+    font-size: 18px;
+    text-align: center;
+    /* padding-top: 5px; */
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.contant-bar #recent-song #tab #button-two #button2 {
+    padding-top: 6px;
+    padding-left: 2px;
+}
+
+.contant-bar #episodes {
+    height: 300px;
+    width: 100%;
+    /* background-color: yellow; */
+    margin-top: 20px;
+    display: flex;
+    margin-left: 5px;
+}
+.contant-bar #episodes #songs {
+    height: 300px;
+    width: 18%;
+    background: #1e1e1e;
+    margin-left: 17px;
+    border-radius: 10px;
+}
+
+.contant-bar #episodes #songs:hover {
+    background-color: #363333;
+}
+.contant-bar #episodes #songs img {
+    height: 190px;
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 16px;
+    margin-left: 18px;
+    object-fit: cover;
+    
+
+
+}
+.contant-bar #episodes #songs p{
+    font-size: 15px;
+    padding-left: 20px;
+    font-weight: 700;
+    padding-top: 15px;
+    color: #fff;
+    /* line-height: 30px; */
+
+}
+.contant-bar #episodes #songs a{
+    text-decoration: none;
+}
+
+.contant-bar #episodes #songs span {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-weight: 600;
+    color: #b0aeae;
+    line-height: 35px;
+    
+}
+
+
+
+
+
+
